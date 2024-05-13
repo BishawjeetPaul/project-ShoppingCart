@@ -1,5 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
-def home_page(views):
-    return HttpResponse("Response is Ok")
+
+def home_page(request):
+    return render(request, "dashboard/dashboard.html")
